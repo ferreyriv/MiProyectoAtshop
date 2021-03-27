@@ -5,6 +5,8 @@ import {BrowserRouter as Router, Route } from "react-router-dom";
 import Playeras from "./Playeras";
 import Home from './Home';
 import MenuMobil from "./MenuMobil";
+import Pantalones from './Pantalones';
+import Accesorios from './Accesorios';
 
 
 const App =()=>{
@@ -23,15 +25,15 @@ return(
       <div className='menu2'> <Menu /></div> 
       <Header isHideMenu={isHideMenu} hideMenuEvent={hideMenu} />
       <Route  path='/' component={!isHideMenu ? MenuMobil : null} />
-      <Home img="https://cdn.luxe.digital/media/2021/01/01184416/best-men-sneakers-2021-designer-review-luxe-digital%402x.jpg"/>
+      <Home img="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"/>
       <Playeras/>
+      <Pantalones/>
+      <Home  img="https://images.unsplash.com/photo-1565127453543-ad97bbbba30d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"/>
       <Playeras/>
-      <Home  img="https://www.myoutfie.com/historias/wp-content/uploads/2020/06/2.png"/>
-      <Playeras/>
-      <Playeras/>
-      <Home img='https://cdn.shopify.com/s/files/1/2278/7763/products/JAKE_BLACK_2048x2048.jpg?v=1550619627'/>
-      <Playeras/>
-      <Playeras/>
+      <Pantalones/>     
+      <Home img='https://images.unsplash.com/photo-1506169894395-36397e4aaee4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'/>
+      <Accesorios/>
+      <Accesorios/>
    </div>
   </Router>
 )

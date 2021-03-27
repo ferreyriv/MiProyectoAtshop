@@ -92,6 +92,7 @@ code {
   display: flex;
   height:700px;
   justify-content: center;
+  margin-bottom: 40px;
  
 }
 .Imagen{
@@ -111,12 +112,11 @@ code {
 
 }
 .Aparador{
-  padding-top: 90px;
   padding-left: 300px;
   margin-bottom: 90px;
 }
 .griditem{
-  background-color: rgb(39, 170, 170);
+  background-color: rgb(47, 139, 139);
   height: 400px;
 
 }
@@ -141,6 +141,9 @@ code {
   display: none;
 }
 .menu1{
+  display: none;
+}
+.MenuMobil{
   display: none;
 }
 
@@ -186,6 +189,10 @@ code {
     transition: ease-in all 0.2s;
     position: fixed;
     justify-content: center;
+    display: block;
+  }
+  .Imagen{
+    width: 100%;
   }
   
 
