@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.barra{
+  height: 60px;
+  text-align: center;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.juan {
+  background-color: black;
+}
+
+.main{
+  background-color:#212529;
+  height: 100%;
+  
+}
+
+.cubito{
+    flex: 1;
+    height:100%;
+    margin-top: 60px;
+    width: 300px;
+    background-color:transparent;
+    left: -40px;
+    position: absolute;
+    transition: ease-in all 0.2s;
+    position: fixed;
+  
+  } 
+  .cubito >*{
+    text-align:end;
+    font-family: fantasy;
+    padding-left: 0rem;
+  
+  }
+  .cubito:hover {
+    left: -10px;
+    background-color:white;
+    width: 800px;
+  } 
+  .encabezado{
+    font-size: 70px;
+    font-family: fantasy;
+    margin:3px 0px 0px 0px;
+    border: 20px  black;
+    flex: 2;
+  }
+  .cubito:hover>p{
+  color:#ff0058;
+  text-align: center;
+
+}
+.cubito .Genero {
+   color: white;
+  
+}
+
+.cubito:hover .Genero{
+  color:black;  
+  text-align: center;
+}
+
+.Secciones{
+  background-color:transparent;
+
+  
+}
+
+.cubito:hover .Secciones{
+    align-content: center;
+    
+
+  
+}
+.Home{
+  background-color:rgb(60, 107, 107);
+  color:red;
+  display: flex;
+  height:700px;
+  justify-content: center;
+ 
+}
+.Imagen{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+.Imagen >img{  
+      width: 100%;
+      height: 100%;
+}
+
+
+.Promociones{
+  color:#ff0058;
+
+}
+.Aparador{
+  padding-top: 90px;
+  padding-left: 300px;
+  margin-bottom: 90px;
+}
+.griditem{
+  background-color: rgb(39, 170, 170);
+  height: 400px;
+
+}
+.Producto{
+  width: 100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.Producto>img{
+  flex: 2;
+}
+.nombreProducto{
+  flex: 1;
+}
+.minimenu{
+  display: flex;
+}
+.Menuhamburguesa{
+  display: none;
+}
+.menu1{
+  display: none;
+}
+
+
+@media (max-width: 575px) {
+  .cubito{
+      display: inline-table;
+      width: 100%;
+      position:absolute;
+      height: 340px;
+      background-color: white;
+      
+  }
+  .encabezado{
+    font-size: 50px;
+  }
+  .Aparador{
+    padding-left: 0px ;
+  }
+  .Home{
+    height: 400px;
+  }
+  .Home > img{
+    width: 100%;
+    height: 100%;
+  }
+  .Home>h1{
+    display: none;
+  }
+  .Menuhamburguesa{
+    display: flex;
+  }
+ .menu2{
+   display: none;
+ }
+.MenuMobil{
+   flex: 1;
+    height:100%;
+    margin-top: 60px;
+    width:300px;
+    background-color:white;
+    position: absolute;
+    transition: ease-in all 0.2s;
+    position: fixed;
+    justify-content: center;
+  }
+  
+
+}
