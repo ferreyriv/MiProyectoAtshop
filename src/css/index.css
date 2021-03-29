@@ -26,6 +26,7 @@ code {
 .main{
   background-color:#212529;
   height: 100%;
+  padding-bottom:50px ;
   
 }
 
@@ -114,10 +115,10 @@ code {
 .Aparador{
   padding-left: 300px;
   margin-bottom: 90px;
+  height: 700px;
 }
 .griditem{
   background-color: rgb(47, 139, 139);
-  height: 400px;
 
 }
 .Producto{
@@ -126,7 +127,6 @@ code {
   display:flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 20px;
 }
 .Producto>img{
   flex: 2;
@@ -162,6 +162,9 @@ code {
   }
   .Aparador{
     padding-left: 0px ;
+      margin-bottom: 0;
+      height: auto;
+
   }
   .Home{
     height: 400px;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -10,11 +10,8 @@ import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme) => ({
 
-  Juan: {
-    flexGrow: 1,
-
-  },
-  Juan:{
+  root: {
+      flexGrow: 1,
       backgroundColor: 'black',
       color: 'rgb(10, 141, 141)',
       height:'60px',
@@ -86,10 +83,10 @@ export default function Header(props) {
   const hideMenu = props.hideMenuEvent;
 
   return (
-    <div className={classes.Juan}>
-      <AppBar className={classes.Juan} position="static">
+    <div className={classes.root}>
+      <AppBar className={classes.root} position="static">
         <Toolbar>
-         <div class='Menuhamburguesa'>
+         <div className='Menuhamburguesa'>
         <IconButton  edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick= {() =>hideMenu()} >
             <MenuIcon />      
           </IconButton>
@@ -104,7 +101,7 @@ export default function Header(props) {
             <InputBase
               placeholder="Search…"
               classes={{
-                Juan: classes.inputRoot,
+                root: classes.inputRoot,
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}

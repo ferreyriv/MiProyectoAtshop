@@ -5,15 +5,15 @@ const Pantalon = (props) => {
 
     return (
     
-        <div className='Pantalon'>
+        <div className='Producto'>
             
-            <h3 className='nombreProducto'> 
+            <h2 className='nombreProducto'> 
                     {props.name}
                     
-                </h3>
+                </h2>
            
                 <div className='Imagen'><img src={props.img} alt={props.name}/></div>
-
+                <h3>$23</h3>   
 
         </div>
     )

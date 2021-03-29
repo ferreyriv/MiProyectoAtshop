@@ -5,7 +5,7 @@ const Accesorio = (props) => {
 
     return (
     
-        <div className='Accesorio'>
+        <div className='Producto'>
             
             <h3 className='nombreProducto'> 
                     {props.name}
@@ -13,7 +13,7 @@ const Accesorio = (props) => {
                 </h3>
            
                 <div className='Imagen'><img src={props.img} alt={props.name}/></div>
-
+                <h1>$23</h1>   
 
         </div>
     )

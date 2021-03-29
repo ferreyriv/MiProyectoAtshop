@@ -1,11 +1,11 @@
 import { Button } from '@material-ui/core'
 import React, { useState } from 'react'
-import {Link,Redirect,Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import Accsesorios from './ListadeAccesorios';
 import Ropa from "./Ropa";
 
 
-const Menu = (props) => {
+const Menu = () => {
 
    
     const[Mujer,setMujer]=useState(false) 
